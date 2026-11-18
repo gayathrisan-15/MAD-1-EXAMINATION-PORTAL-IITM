@@ -1,0 +1,2 @@
+{% extends "base.html" %}{% block title %}Approval pending{% endblock %}{% block content %}
+<div class="card p-5 text-center"><h2>Approval pending</h2><p>Your examiner account is waiting for an administrator to approve it. You will be able to use the dashboard after approval.</p><form method="post" action="{{ url_for('logout') }}">{{ csrf_input() }}<button class="btn btn-outline-primary">Log out</button></form></div>{% endblock %}
